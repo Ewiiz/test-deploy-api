@@ -17,7 +17,7 @@ app.use(cors())
 require('dotenv').config()
 
 const corsOptions = {
-    origin: ['https://api-connexion.herokuapp.com/', 'https://page-de-co.vercel.app/', 'https://page-de-co-alexandrematilla1-gmailcom.vercel.app/'],
+    origin: ['https://server-p9xqcgnrv-ewiiz.vercel.app/'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }
 
@@ -35,6 +35,6 @@ mongoose
         console.log(`Erreur: ${err.message}`)
     })
 
-app.use('/', routerUser)
+app.use('/api', routerUser)
 
 module.exports = app
