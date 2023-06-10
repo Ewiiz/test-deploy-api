@@ -17,7 +17,7 @@ exports.getOneUser = async (req, res) => {
         if (!oneUser) {
             return res.status(400).json({ message: 'Cet utilisateur n\'existe pas.' })
         }
-        res.status(200).json({ message: `Voici l'utilisateur avec le nom: ${oneUser.name}.`, oneUser })
+        res.status(200).json({ message: `Voici l'utilisateur avec le nom: ${oneUser.prenom}.`, oneUser })
     }
     catch (err) {
         res.status(500).json({ message: `Erreur: ${err.message}` })

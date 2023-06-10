@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
+    "start": "node server",
+    "vercel-build": "echo hello"
   },
   "author": "Code Hive",
   "license": "ISC",
